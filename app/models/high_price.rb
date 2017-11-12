@@ -1,0 +1,2 @@
+class HighPrice < Price
+end

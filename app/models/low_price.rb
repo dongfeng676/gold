@@ -1,0 +1,2 @@
+class LowPrice < Price
+end

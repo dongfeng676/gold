@@ -1,0 +1,2 @@
+class BankBuyPrice < Price
+end
