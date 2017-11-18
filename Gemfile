@@ -57,3 +57,4 @@ gem 'httparty'
 gem 'watir'
 gem "webdrivers", "~> 3.0"
 gem 'pry'
+gem 'alidayu_sms'

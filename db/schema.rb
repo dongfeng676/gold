@@ -10,16 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171030133020) do
+ActiveRecord::Schema.define(version: 20171118085723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "price_spaces", force: :cascade do |t|
+    t.float "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "prices", force: :cascade do |t|
     t.float "price"
     t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "user_price_reminds", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "price_space_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "rise"
   end
 
 end

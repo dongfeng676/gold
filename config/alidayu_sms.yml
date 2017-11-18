@@ -1,0 +1,19 @@
+defaults: &defaults
+  alidayu:
+    app_key: LTAIE6V8UX92HKOs
+    app_secret: G6YfrEblrdgRBK9APlQArIvBESXAEM
+    post_url: 'http://gw.api.taobao.com/router/rest'
+    product: "阿里打鱼"
+    sms_templates:
+      - name: "gold"
+        sms_free_sign_name: "张明举" # 短信签名
+        sms_template_code: "SMS_111895208" # 短信模板
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

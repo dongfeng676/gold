@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+PriceSpace.create([
+  { value: 0.8 },
+  { value: 1.1 },
+  { value: 1.4 },
+  { value: 1.7 },
+  { value: 2 },
+  { value: 2.3 },
+  { value: 2.5 }
+])

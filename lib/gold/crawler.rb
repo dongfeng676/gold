@@ -47,6 +47,10 @@ module Gold
           BankSalePrice.create(price: bank_sale)
         end
       end
+
+      def prase_data(bank_buy)
+        Gold::Reminde.parse(bank_buy)
+      end
     end
   end
 end
